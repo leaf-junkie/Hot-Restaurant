@@ -22,21 +22,22 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Hot Restaurant</h1>
-        <hr class="my-4">
-        <p class="lead">We only have 5 tables! Book your seat before they all are gone!</p>
-        
-        <a class="btn btn-primary btn-lg" href="/tables" role="button">View Tables</a>
-        <a class="btn btn-secondary btn-lg" href="/reservations" role="button">Make a Reservation</a>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hot Restaurant</h1>
+            <hr class="my-4">
+            <p class="lead">We only have 5 tables! Book your seat before they all are gone!</p>
+            
+            <a class="btn btn-primary btn-lg" href="/tables" role="button">View Tables</a>
+            <a class="btn btn-secondary btn-lg" href="/reservations" role="button">Make a Reservation</a>
+        </div>
+        <footer class="footer">
+            <a href="/api/tables">API Tables</a>
+            |
+            <a href="/api/waitlist">API Waitlist</a>
+        </footer>
     </div>
-    <footer class="footer">
-        <a href="/api/tables">API Tables</a>
-        |
-        <a href="/api/waitlist">API Waitlist</a>
-    </footer>
-</div>
+    <script src="/13-expresss/activities/Hot-Restaurant/routes/server.js"></script>
 </body>
 
 </html>
