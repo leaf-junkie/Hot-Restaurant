@@ -22,21 +22,52 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Hot Restaurant</h1>
-        <hr class="my-4">
-        <p class="lead">Current reservations and waiting list</p>
-        
-        <a class="btn btn-primary btn-lg" href="/reservation" role="button">Make Reservation</a>
-        <a class="btn btn-secondary btn-lg" href="/index" role="button">Homepage</a>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hot Restaurant</h1>
+            <hr class="my-4">
+            <p class="lead">Current reservations and waiting list</p>
+
+            <a class="btn btn-primary btn-lg" href="/reservation" role="button">Make Reservation</a>
+            <a class="btn btn-secondary btn-lg" href="/index" role="button">Homepage</a>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        Table Reservation
+                    </div>
+                    <div class="card-body" id="reservation-list">
+                        <!--add reservations here-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Wait List
+                        </div>
+                        <div class="card-body" id="wait-list">
+                            <!--add wait list items here-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <footer class="footer">
+            <a href="/api/clear">Clear Tables</a>
+            |
+            <a href="/api/tables">API Tables</a>
+            |
+            <a href="/api/waitlist">API Waitlist</a>
+        </footer>
     </div>
-    <footer class="footer">
-        <a href="/api/tables">API Tables</a>
-        |
-        <a href="/api/waitlist">API Waitlist</a>
-    </footer>
-</div>
 </body>
 
 </html>
