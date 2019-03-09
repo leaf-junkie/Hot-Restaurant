@@ -1,3 +1,5 @@
+const waitlist = require("./data/waitlist")
+const tables = require("./data/tables")
 
 function populateWaiting(){
     const waiting = $("#wait-list");
@@ -10,8 +12,8 @@ function populateWaiting(){
         tableGroup.append(tableNumber,hr);
 
     
-        for each(var x in item){
-            
+        for each(var info in item){
+
 
         }
 

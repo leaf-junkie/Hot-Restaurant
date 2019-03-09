@@ -1,7 +1,7 @@
 // Dependencies
 const express = require('express');
 const path = require('path');
-const tables = require('./tables.js');
+const tables = require('../data/tables');
 
 // Sets up the Express App
 var app = express();
