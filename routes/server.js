@@ -1,35 +1,13 @@
 // Dependencies
 const express = require('express');
 const path = require('path');
+const tables = require('./tables.js');
 
 var app = express();
 var PORT = 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-// Data
-var Table1 = {
-    ID: "JamilW",
-    Name: "Jamil Weeks",
-    Email: "jamilweeks@yahoo.com",         
-    Phone: "999-999-9999"
-} 
-
-var Table2 = {
-    ID: "CharlesB",
-    Name: "Charles Brady",
-    Email: "charlesbrady@gmail.com",
-    Phone: "888-888-8888"
-}
-
-var Table3 =    {
-    ID: "JulieR",
-    Name: "Julie Ragsdale",
-    Email: "julieragsdale@hotmail.com",
-    Phone: "777-777-77777"
-
-}
 
 // Routes
 app.get("/", function(req, res) {
